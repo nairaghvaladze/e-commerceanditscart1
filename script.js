@@ -195,12 +195,3 @@ document.getElementById('main').innerHTML=data1;
 
 
 
-function addtocart(){
-  fetch("https://fakestoreapi.com/products")
-  .then(response => response.json())
-  .then(sys =>{
-    sys.forEach(item => {
-      console.log(item.sys);
-    });
-  });
-}
